@@ -1,0 +1,62 @@
+aside {
+    width: 345px;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+main {
+    margin-left: 345px;
+    transition: .5s;
+    background-color: #fafafa;
+}
+
+.bar {
+    width: 40px;
+    height: 4px;
+    background-color: blue;
+    margin: 7px 0;
+    transition: .5s;
+}
+
+.show .bar1 {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.show .bar2 {
+    opacity: 0;
+    transform: translate(-20px);
+}
+
+.show .bar3 {
+    transform: rotate(42deg) translate(-9px, -8px);
+}
+
+.show aside {
+    width: 75px;
+    margin-left: 0;
+}
+
+.show main {
+    margin-left: 75px;
+}
+
+@media screen and (max-width: 576px) {
+    aside {
+        width: 75px;
+        margin-left: -100%;
+    }
+
+    main {
+        margin-left: 0px;
+
+    }
+
+    .show aside {
+        width: 75px;
+        margin-left: 0;
+    }
+}
